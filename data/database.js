@@ -15,9 +15,9 @@ try {
   await client.db(dbName).command({ ping: 1 });
   console.log('Connected successfully to server');
 } catch (error) {
-  console.log('Connection failed.');
+  console.log('Connection failed');
   await client.close();
-  console.log('Connection closed.');
+  console.log('Connection closed');
 }
 
 const database = client.db(dbName);
